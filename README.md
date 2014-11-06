@@ -11,8 +11,10 @@ is bypassed.
 
 Usage:
 
-    tap <tapname>
-    opentap <tapname>
+<pre>
+    tap &lt;tapname&gt;
+    opentap &lt;tapname&gt;
+</pre>
 
 Where tapname is the name of the tap you want to assign (tap) or use (opentap).
 
