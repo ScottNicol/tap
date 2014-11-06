@@ -18,10 +18,11 @@ Where tapname is the name of the tap you want to assign (tap) or use (opentap).
 
 
 Environment Variables:
-
+<pre>
 HOME - user's home directory
 TAPLOG - location where tap names are stored.  If not set, tap names are
     stored in $HOME/.tap
+</pre>
 
 
 Examples:
@@ -31,6 +32,7 @@ a command line that might take a lot of time and produce a lot of
 output.  Whenever opentap is used, the current output is replicated
 on opentap's stdout.
 
+<pre>
 $ find / -type f 2>/dev/null | tap bf | xargs grep xyzzy | tap grepmagic >grep.out &
 $ opentap bf
 [current output from find]
@@ -42,3 +44,4 @@ $ opentap bf
 [current output from find]
 ^C
 ...etc
+</pre>
